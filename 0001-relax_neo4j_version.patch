@@ -1,0 +1,13 @@
+diff --git a/pyproject.toml b/pyproject.toml
+index 3ad12f8..d3f92c4 100644
+--- a/pyproject.toml
++++ b/pyproject.toml
+@@ -22,7 +22,7 @@ classifiers = [
+     "Topic :: Database",
+ ]
+ dependencies = [
+-    "neo4j~=5.19.0",
++    "neo4j>=5.19.0",
+ ]
+ requires-python = ">=3.7"
+ dynamic = ["version"]
