@@ -15,8 +15,7 @@
       let
         project = pkgs.callPackage ./package.nix {
           buildPythonPackage = nixpkgs.legacyPackages.${system}.python3.pkgs.buildPythonPackage;
-          setuptools = nixpkgs.legacyPackages.${system}.python3.pkgs.setuptools;
-          neo4j = nixpkgs.legacyPackages.${system}.python3.pkgs.neo4j;
+          python = nixpkgs.legacyPackages.${system}.python3;
         };
         my_python = pkgs.python3.withPackages (ps: [
           project
